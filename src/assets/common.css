@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css');
+@import "./basic-css/padding.css";
+@import "./basic-css/margin.css";
+@import "./basic-css/flex.css";
+@import "./basic-css/color.css";
+@import "./basic-css/font.css";
+@import "./public.css";
+/* @import "./custom-antdv.css"; */
+
+.ant-layout-header {
+  background: #fff;
+  height: unset;
+  padding: unset;
+  line-height: unset;
+}
+.close{cursor: pointer;}
+.img{width: 100%;}
+.ant-drawer-body {
+  font-size: 12px;
+}
+.anticon{font-size: 12px;}
+form .ant-select .width100{width:100%;}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: Microsoft JhengHei, Avenir, Helvetica, Arial, sans-serif;
+}
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+.inputHeight{display: block;height: 100%;width: 100%;min-height: 50px;vertical-align: top;}
+
+body,
+html,
+.ant-input,
+.ant-btn,
+input,
+label,
+span {
+  font-size: 0.8em;
+  /* font-size: 1em; */
+}
+
+/* .ant-btn {
+  height: 28px;
+  font-size: 0.8em;
+  line-height: 28px;
+} */
+
+.ant-btn.btnImg {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  padding: 0;
+  text-align: center;
+}
+
+.a-col {
+  line-height: 30px;
+}
+
+::placeholder {
+  color: #999999;
+}
+
+.ant-btn.addUserBtn {
+  height: 28px;
+  border-radius: 20px;
+  min-width: 100px;
+  padding: 0;
+  border: 0;
+}
+
+.ant-tabs,
+.ant-tabs-nav-container {
+  font-size: 0.8em;
+}
+
+.v-modal {
+  background: transparent;
+}
+
+.el-drawer__wrapper {
+  position: absolute;
+  top: -1em;
+  border-radius: 10px;
+  box-shadow: -3px 0px 7px #ddd;
+}
+
+
+form .ant-select,
+form .ant-cascader-picker {
+  width: unset;
+}
+
+.ant-btn > i, .ant-btn > span{
+  vertical-align: top;
+}
+.textarea{display: block;width: 99%;padding:5px;}
+
+.ul{list-style-type: circle;}
+.ul li{display: block;margin-bottom: 1em;list-style-type: circle;
+  }
+
+ul li{display: block;}
+
+
+a .iconPlay,a .iconWarning{font-size: 15px;}
+
+.hover{cursor: pointer;}
+.hover:hover{color: #85b86c;}
+.pointer{cursor: pointer;}
+.pointer:hover{color: #f86f54;}
+.hand {cursor: pointer;}
+.none{display: none;}
+.textarea,.input{width: 100%;border: 0;}
+.disable {cursor: not-allowed;}
+.select, input{padding: 3px 5px;font-size: 1.2em;}
+
+.table{width:100%;}
+.table thead{background: #efefef;}
+.table thead td{text-align: center;}
+.table tr,.table td{line-height: 22px;border-bottom:1px dotted #000;
+  text-align: left;vertical-align: middle;}
+
+.box-shadow {
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 5%), 0 1px 2px -2px rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 7%);
+}
+/* // 標籤樹 */
+.tags-tree-black {
+  padding: 30px 10px;
+  /* // width: 60px; */
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 5px;
+  min-height: 440px;
+  background: #fff;
+}
+/* // 標籤樹 */
+.tags-tree {
+  width: 250px;
+  min-width: 250px;
+  background: #fff;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 10px;
+  min-height: 500px;
+}
+.drawer-right {
+  width: 100%;
+  width: 26% !important;
+  min-width: 150px;
+  height: 100%;
+}
+/*公共样式*/
+.commonUI-body {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  min-width: 860px;
+  z-index: 10;
+}
+.commonUI-body-header {
+  width: 100%;
+  display: flex;
+  padding: 16px 16px 10px;
+}
+.commonUI-body-content {
+  flex: 1;
+  min-height: 500px;
+  min-width: 680px;
+  background: #fff;
+  margin: 0 20px 20px;
+  border-radius: 7px;
+}
+.commonUI-body .btn-border {
+  border: 1px solid #f86f54;
+  color: #f86f54;
+  padding: 2px 15px;
+  font-size: 14px;
+}

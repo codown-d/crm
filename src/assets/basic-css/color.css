@@ -1,0 +1,70 @@
+
+/* Layui 顏色參考： https://www.bejson.com/doc/layui/doc/element/color.html */
+/* ElementUI 顏色參考: https://element.eleme.cn/#/zh-CN/component/color */
+/* Antdvue 顏色參考：https://github.com/vueComponent/ant-design-vue/blob/master/components/style/themes/default.less */
+
+/* @primary-color: #1890ff; // 全局主色
+@link-color: #1890ff; // 链接色
+@success-color: #52c41a; // 成功色
+@warning-color: #faad14; // 警告色
+@error-color: #f5222d; // 错误色
+@font-size-base: 14px; // 主字号
+@heading-color: rgba(0, 0, 0, 0.85); // 标题色
+@text-color: rgba(0, 0, 0, 0.65); // 主文本色
+@text-color-secondary: rgba(0, 0, 0, 0.45); // 次文本色
+@disabled-color: rgba(0, 0, 0, 0.25); // 失效色
+@border-radius-base: 4px; // 组件/浮层圆角
+@border-color-base: #d9d9d9; // 边框色
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // 浮层阴影 */
+
+.icon--yellow {
+    color: #fc0;
+    color: rgb(241, 204, 53);
+    /* color: #fff7d6; */
+}
+
+.gray-text {
+    /* color: rgba(38, 41, 44, 0.64); */
+    color: #909399;
+}
+
+
+.icon--red {
+    color: #f94839;
+}
+
+.color--red {
+    color: red !important;
+}
+
+.color--blue {
+    color: #317ae2;
+}
+
+.color--green {
+    color: #63C888;
+}
+
+.color--white {
+    color: #fff;
+}
+
+.bg--white {
+    background: #fff;
+}
+
+.success-color {
+    color: #0c923e;
+}
+
+.success-bg {
+    background: #0c923e;
+}
+
+.fail-color {
+    color: #f94839;
+}
+
+.fail-bg {
+    background: #f94839
+}

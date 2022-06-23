@@ -1,0 +1,113 @@
+/* margin 四周 */
+.margin-20 {
+    margin: 20px;
+}
+
+.margin-30 {
+    margin: 30px;
+}
+
+/* margin 左 */
+.marginLft-5 {
+    margin-left: 5px;
+}
+
+.marginLft-8 {
+    margin-left: 8px;
+}
+
+.marginLft-10 {
+    margin-left: 10px;
+}
+
+.marginLft-15 {
+    margin-left: 15px;
+}
+
+.marginLft-20 {
+    margin-left: 20px;
+}
+
+/* margin底部 */
+.marginBtm-5 {
+    margin-bottom: 5px;
+}
+
+.marginBtm-8 {
+    margin-bottom: 8px;
+}
+
+.marginBtm-10 {
+    margin-bottom: 10px;
+}
+
+.marginBtm-15 {
+    margin-bottom: 15px;
+}
+
+.marginBtm-20 {
+    margin-bottom: 20px;
+}
+
+.marginBtm-24 {
+    margin-bottom: 24px;
+}
+
+/* margin右 */
+.marginRgt-5 {
+    margin-right: 5px;
+}
+
+.marginRgt-8 {
+    margin-right: 8px;
+}
+
+.marginRgt-10 {
+    margin-right: 10px;
+}
+
+.marginRgt-15 {
+    margin-right: 15px;
+}
+
+/* margin顶部 */
+.marginTop-5 {
+    margin-top: 5px;
+}
+
+.marginTop-10 {
+    margin-top: 10px;
+}
+
+.marginTop-15 {
+    margin-top: 15px;
+}
+
+.marginTop-24 {
+    margin-top: 24px;
+}
+
+.marginTop-30 {
+    margin-top: 30px;
+}
+
+.marginTop-20 {
+    margin-top: 20px;
+}
+
+/* margin 底部、底部 */
+.margin-tb-5 {
+    margin: 5px 0 5px 0;
+}
+
+.margin-tb-10 {
+    margin: 10px 0 10px 0;
+}
+
+.margin-lr-5 {
+    margin: 0px 5px;
+}
+
+.margin-lr-8 {
+    margin: 0px 8px;
+}

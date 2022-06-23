@@ -1,0 +1,19 @@
+{
+    "name": "公司名称",
+    "ownerUser": "上级",
+    "companyCode": "统一编号",
+    "foundDate": "成立日期",
+    "industrial": "产业类型",
+    "sales": "营业额",
+    "staffCount": "员工人数",
+    "phone": "电话",
+    "fax": "传真",
+    "address": "地址",
+    "email": "Email",
+    "website": "网址",
+    "socialAccount": "FB粉丝专页",
+    "socialAccountType": "社交账号类型",
+    "latitude": "经纬度",
+    "longitude": "经纬度",
+    "remark": "备注"
+}

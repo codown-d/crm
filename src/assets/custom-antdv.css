@@ -1,0 +1,230 @@
+/* 修改header中搜索输入框的圆角、padding-left */
+.header .ant-input {
+    border-radius: 16px !important;
+    padding-left: 15px;
+}
+/* 标签树选中的样式 */
+/* .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: #f86f5410;
+    color: #f86f54;
+} */
+
+/* 标签树hover的样式 */
+/* .ant-tree li .ant-tree-node-content-wrapper:hover {
+    background-color: #f86f5440;
+} */
+
+/* 去掉antdv table的边框 */
+.ant-table-small {
+    border: none;
+}
+
+/* 修改表头背景颜色 */
+.ant-table-small > .ant-table-content .ant-table-header {
+    background-color: #fffefb;
+}
+
+/* 以下部分是修改antd vue table组件的默认样式 */
+.ant-table-pagination.ant-pagination {
+    float: left;
+    margin: 16px 0;
+}
+
+.ant-pagination-item:focus,
+.ant-pagination-item:hover {
+    border-color: #f7a84a;
+    transition: all 0.3s;
+    color: #f7a84a;
+}
+.ant-pagination-item:focus a,
+.ant-pagination-item:hover a {
+    color: #f7a84a;
+}
+.ant-pagination-item-active {
+    font-weight: 500;
+    /* background: #F7A84A; */
+    border-color: #f7a84a;
+    background: #fff;
+    color: #f7a84a;
+}
+.ant-pagination-item-active a {
+    color: #f7a84a;
+}
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover {
+    border-color: #f7a84a;
+}
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+    color: #f7a84a;
+}
+
+.ant-pagination-prev:focus .ant-pagination-item-link,
+.ant-pagination-next:focus .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link {
+    color: #f7a84a;
+    border-color: #f7a84a;
+}
+
+.ant-pagination-disabled a,
+.ant-pagination-disabled:hover a,
+.ant-pagination-disabled:focus a,
+.ant-pagination-disabled .ant-pagination-item-link,
+.ant-pagination-disabled:hover .ant-pagination-item-link,
+.ant-pagination-disabled:focus .ant-pagination-item-link {
+    color: rgba(0, 0, 0, 0.25);
+    border-color: #d9d9d9;
+    cursor: not-allowed;
+}
+
+.ant-pagination-item-link {
+    /* margin-top: -15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-pagination.mini .ant-pagination-prev,
+.ant-pagination.mini .ant-pagination-next {
+    /* min-width: 24px; */
+    /* height: 28px; */
+    /* margin: 0; */
+    /* line-height: 24px; */
+}
+
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+    background: #f7a84a20;
+    background: #f7f7f7;
+}
+
+.ant-table-thead > tr > th {
+    background: #fffefb;
+}
+
+.ant-table-thead > tr > th {
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    line-height: 1;
+}
+
+.ant-table-thead > tr > th:first-child {
+    border-left: 1px solid #e8e8e8;
+}
+
+.ant-table-thead > tr > th:last-child {
+    border-right: 1px solid #e8e8e8;
+}
+
+/* .ant-table-body {
+    font-weight: 600;
+  } */
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+    padding: 5px 0;
+}
+
+/* 修改所有antd vue tabs的默认颜色 */
+.ant-tabs-nav .ant-tabs-tab {
+    font-size: 14px;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+    color: #4e4e4e;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 0 0 0.25px currentColor;
+}
+
+.ant-tabs-nav .ant-tabs-tab:hover {
+    color: #f97358;
+}
+
+.ant-tabs-ink-bar {
+    background-color: #f97358;
+}
+
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+    color: #f97358;
+}
+
+/* input hover focus 默认颜色更改 */
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+    border-color: #f97358;
+}
+
+.ant-input:focus {
+    border-color: #f97358;
+    box-shadow: 0 0 0 2px rgb(249 115 88 / 20%);
+}
+
+.ant-input:hover {
+    border-color: #f97358;
+}
+
+/* select 默认颜色修改 */
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+    border-color: #f97358;
+}
+
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+    border-color: #f97358;
+    box-shadow: 0 0 0 2px rgb(249 115 88 / 20%);
+}
+
+.ant-select-selection:hover {
+    border-color: #f97358;
+}
+
+/* 修改 message 图标垂直居中对齐 */
+.ant-message .ant-message-custom-content {
+    display: flex;
+}
+
+/* 修改 ant-menu 标题行 图标与文字不对齐 */
+.ant-menu-submenu-title > span {
+    display: flex;
+    align-items: center;
+}
+
+/* 修改 ant-menu 选中颜色 */
+.ant-menu-submenu-selected {
+    color: #f97358;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #f6f6fc;
+}
+
+.ant-menu-item-selected {
+    color: #f97358;
+}
+
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+    border-right: 3px solid #f97358;
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+    color: #f97358;
+}
+
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+    background: #f6f6fc;
+}

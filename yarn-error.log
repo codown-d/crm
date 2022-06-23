@@ -1,0 +1,134 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\for\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\Xshell 7\;D:\Program Files (x86)\Xftp 7\;C:\Program Files\nodejs\;C:\Users\for\AppData\Local\Microsoft\WindowsApps;C:\Users\for\.dotnet\tools;C:\Users\for\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  14.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:187:17)
+
+npm manifest: 
+  {
+    "name": "mySales",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "serve:prod": "vue-cli-service serve --mode production",
+      "serve:test": "vue-cli-service serve --mode test",
+      "build:dev": "vue-cli-service build --mode development",
+      "build:prod": "vue-cli-service build --mode production",
+      "build:test": "vue-cli-service build --mode test",
+      "lint": "vue-cli-service lint",
+      "commit": "./node_modules/cz-customizable/standalone.js",
+      "commit:win": "node commit.js",
+      "start": "node index.js",
+      "server": "nodemon index.js --ignore client"
+    },
+    "dependencies": {
+      "@fullcalendar/core": "^5.9.0",
+      "@fullcalendar/daygrid": "^5.10.1",
+      "@fullcalendar/interaction": "^5.10.1",
+      "@fullcalendar/list": "^5.10.1",
+      "@fullcalendar/timegrid": "^5.10.1",
+      "@fullcalendar/vue": "^5.10.1",
+      "@johmun/vue-tags-input": "^2.1.0",
+      "@line/bot-sdk": "^7.4.0",
+      "ant-design-vue": "^1.7.8",
+      "async_hooks": "^1.0.0",
+      "atob": "^2.1.2",
+      "axios": "^0.22.0",
+      "chart.js": "2.9",
+      "compression-webpack-plugin": "^5.0.1",
+      "core-js": "^3.6.5",
+      "cz-customizable": "^6.3.0",
+      "echarts": "^5.3.1",
+      "element-resize-detector": "^1.2.4",
+      "element-ui": "^2.15.6",
+      "emailjs-mime-codec": "^2.0.9",
+      "errno": "^1.0.0",
+      "file-saver": "2.0.1",
+      "js-base64": "^3.7.1",
+      "js-cookie": "^2.2.0",
+      "json5": "^2.2.0",
+      "less": "^4.1.2",
+      "less-loader": "6.0.0",
+      "linebot": "^1.6.1",
+      "lodash": "^4.17.21",
+      "material-design-icons": "^3.0.1",
+      "moment": "^2.29.1",
+      "nprogress": "^0.2.0",
+      "query-string": "^7.0.1",
+      "rimraf": "^3.0.2",
+      "vue": "^2.6.14",
+      "vue-chartkick": "^0.6.1",
+      "vue-cloneya": "^1.0.14",
+      "vue-dnd-zone": "^0.4.0",
+      "vue-draggable-resizable": "^2.3.0",
+      "vue-echarts": "^6.0.2",
+      "vue-gapi": "^1.1.1",
+      "vue-html5-editor": "^1.1.1",
+      "vue-i18n": "^8.1.0",
+      "vue-router": "^3.5.2",
+      "vue2-editor": "^2.10.3",
+      "vuedraggable": "^2.24.3",
+      "vuetify": "^2.6.5",
+      "vuex": "^3.6.2",
+      "vuex-extensions": "^1.1.5",
+      "xlsx": "^0.14.1"
+    },
+    "devDependencies": {
+      "@vue/cli-plugin-babel": "~4.5.0",
+      "@vue/cli-plugin-eslint": "~4.5.0",
+      "@vue/cli-service": "~4.5.0",
+      "@vue/composition-api": "^1.4.9",
+      "babel-eslint": "^10.1.0",
+      "cross-env": "^7.0.3",
+      "deepmerge": "^4.2.2",
+      "eslint": "^6.7.2",
+      "eslint-plugin-vue": "^6.2.2",
+      "mockjs": "^1.1.0",
+      "prettier": "2.5.1",
+      "sass": "~1.32",
+      "sass-loader": "^12.6.0",
+      "terser-webpack-plugin": "^5.3.1",
+      "uglifyjs-webpack-plugin": "^2.2.0",
+      "vue-template-compiler": "^2.6.11",
+      "webpack-bundle-analyzer": "^4.5.0"
+    },
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended"
+      ],
+      "parserOptions": {
+        "parser": "babel-eslint"
+      },
+      "rules": {}
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not dead"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
