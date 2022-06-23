@@ -12,7 +12,7 @@
 	<div class="activity-page">
 		<div class="activity-btn flex-between">
             <div class="flex">
-                <a-button type="primary" icon="plus-circle" @click="toAdd" style="margin-right: 12px">新增活動</a-button>
+                <a-button type="primary" icon="plus-circle" @click="toAdd" style="margin-right: 12px">新增活動36</a-button>
                 <myButton class="marginRgt-10" icon="reload" :isIconBtn="true" @click="fetchData(true)" />
             </div>
 

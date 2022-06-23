@@ -10,9 +10,9 @@
 		>
 			<a-form-model-item label="活動名稱" prop="name">
 				<a-input placeholder="請輸入活動名稱" v-model="form.name" />
-			</a-form-model-item>
+			</a-form-model-item> 
 			<a-form-model-item label="活動日期" prop="time">
-				<a-range-picker v-model="form.time" :placeholder="['開始日期', '結束日期']" style="width: 100%" show-time />
+				<a-range-picker v-model="form.time" :placeholder="['開始日期', '結束日期']" style="width: 100%" show-time/>
 			</a-form-model-item>
 
 			<a-form-model-item label="活動描述" prop="publicDescription">

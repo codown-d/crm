@@ -22,6 +22,7 @@ import vuetify from '@/plugins/vuetify' // path to vuetify export
 
 //引入antdv样式
 import 'ant-design-vue/dist/antd.less'
+import 'pikaday/css/pikaday.css';
 import './assets/common.css'
 import './assets/custom-antdv.css'
 

@@ -40,13 +40,13 @@ module.exports = {
         // https: false,   //是否使用https协议
         // hotOnly: true, //是否开启热更新
         proxy: { //配置跨域
-            '/': {
+            '/api': {
                 // target: 'https://www.mysales.com.tw/',//填写真实的后台接口
                 target: 'https://www.mysales.com.tw',
                 ws: false,
                 changOrigin: true, //允许跨域
                 pathRewrite: {
-                    '^/api': ''//请求的时候使用这个api就可以
+                    '^/api': '/api'//请求的时候使用这个api就可以
                 }
             },
         }
