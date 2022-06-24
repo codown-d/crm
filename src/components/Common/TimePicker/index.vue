@@ -1,56 +1,70 @@
 <template>
-	<div class="crm-rang-picker">
-		<input type="text" :id="id" />
-		<div :id="id + 'container'"></div>
+	<div class="crm-time-picker">
+		<a-dropdown :trigger="['click']">
+			<a @click.prevent style="text-decoration: none;height:32px;display: inline-block;">
+				<a-input v-model:value="value" placeholder="h:mm PM" allowClear />
+			</a>
+			<a-menu
+				slot="overlay"
+				@click="menuClick"
+				:selectedKeys="[value]"
+				style="height: 200px; overflow-y: overlay"
+			>
+				<template v-for="item in menuList">
+					<a-menu-item :key="item.key">
+						{{ item.key }}
+					</a-menu-item>
+				</template>
+			</a-menu>
+		</a-dropdown>
 	</div>
 </template>
 <script>
-var Pikaday = require('pikaday')
 var Moment = require('moment')
-function generateUUID() {
-	var d = new Date().getTime()
-	if (window.performance && typeof window.performance.now === 'function') {
-		d += performance.now() //use high-precision timer if available
-	}
-	var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-		var r = (d + Math.random() * 16) % 16 | 0
-		d = Math.floor(d / 16)
-		return (c == 'x' ? r : (r & 0x3) | 0x8).toString(16)
-	})
-	return uuid
-}
+import { timeData } from '@/utils/util'
 export default {
-	name: 'RangPicker',
-	props: {},
+	name: 'TimePicker',
+	props: {
+		timeList: {
+			type: Array,
+			default: function () {
+				return timeData
+			},
+		},
+		defaultValue: {
+			type: String,
+			default: function () {
+				return timeData[0].key
+			},
+		},
+	},
 	data() {
 		return {
-			salesStageIndex: 0,
-			flowStepList: [],
-			id: generateUUID(),
+			menuList: this.timeList,
+			id: this.$util.generateUUID(),
+			value: '',
 		}
 	},
-	mounted() {
-		let field = document.getElementById(this.id)
-		var picker = new Pikaday({
-			field,
-			container: document.getElementById(this.id + 'container'),
-			onOpen: e => {
-				let el = $('<span class="picker-today">今天</span>').click(() => {
-					picker.setMoment(this.$moment())
-				})
-				$(picker.el).find('.pika-lendar').append(el)
-			},
-		})
-
-		console.log(picker, $(picker.el))
-		console.log(Moment())
+	mounted() {},
+	watch: {
+		defaultValue(val, oldVal) {
+			console.log(val)
+			this.value = val
+		},
+		timeList(val, oldVal) {
+			this.menuList = val
+		},
 	},
-	watch: {},
-	methods: {},
+	methods: {
+		menuClick(item) {
+			this.value = item.key
+			this.$emit('onChange', item.key)
+		},
+	},
 }
 </script>
 <style lang="less">
-.crm-rang-picker {
+.crm-time-picker {
 	input {
 		background: #fff;
 		padding-left: 8px;
@@ -66,18 +80,6 @@ export default {
 		&:focus {
 			border-color: #f5222d;
 			outline: none;
-		}
-	}
-	.picker-today {
-		cursor: pointer;
-		float: right;
-		padding: 2px 7px;
-		color: #317ae2;
-		height: 28px;
-		line-height: 26px;
-		border-radius: 4px;
-		&:hover {
-			background: rgba(0, 0, 0, 0.1);
 		}
 	}
 }

@@ -79,20 +79,13 @@
 				</div>
 			</a-form-model-item>
 			<a-form-model-item label="活動日期" prop="time">
-				<a-row :gutter="8">
-					<a-col class="gutter-row" :span="6">
-						<RangPicker />
-					</a-col>
-					<a-col class="gutter-row" :span="6">
-						<RangPicker />
-					</a-col>
-					<a-col class="gutter-row" :span="6">
-						<RangPicker />
-					</a-col>
-					<a-col class="gutter-row" :span="6">
-						<RangPicker />
-					</a-col>
-				</a-row>
+				<div style="display: flex; align-items: center">
+					<RangPicker />
+					<div style="margin: 0 8px"><TimePicker @onChange="onChange" /></div>
+					-
+					<div style="margin: 0 8px"><TimePicker :defaultValue="time1" :timeList="timeList"/></div>
+					<RangPicker />
+				</div>
 			</a-form-model-item>
 			<a-form-model-item label="活動描述" prop="publicDescription">
 				<a-textarea
@@ -139,7 +132,8 @@ import { mapGetters } from 'vuex'
 import { phoneIcon, meettingIcon, workIcon, flagIcon, emailIcon, lunchIcon } from './iconSvgs'
 import dictSelect from '@/components/Common/dictSelect'
 import RangPicker from '@/components/Common/RangPicker'
-
+import TimePicker from '@/components/Common/TimePicker'
+import { timeData } from '@/utils/util'
 export default {
 	name: 'activeForm',
 	components: {
@@ -151,6 +145,7 @@ export default {
 		lunchIcon,
 		dictSelect,
 		RangPicker,
+		TimePicker,
 	},
 	data() {
 		return {
@@ -202,6 +197,8 @@ export default {
 				// 	},
 				// ],
 			},
+			time1: '',
+			timeList:[],
 		}
 	},
 	props: {
@@ -223,6 +220,14 @@ export default {
 		this.activityTypePlaceholder = this.activityTypeIconList[0].type_title
 	},
 	watch: {
+		time1: {
+			immediate: true,
+			deep: true,
+			handler(val, oldVal) {
+				console.log(val)
+this.changeTimeList(val)
+			},
+		},
 		formData: {
 			immediate: true,
 			deep: true,
@@ -242,6 +247,15 @@ export default {
 		},
 	},
 	methods: {
+		changeTimeList(val){
+			let index = timeData.findIndex((item)=>item.key===val)
+			console.log(index)
+			this.timeList=timeData.slice(index,index+33)
+		},
+		onChange(val){
+			this.time1=val;
+			this.changeTimeList(val)
+			},
 		validate() {
 			return new Promise(resolve => {
 				this.form.publicDescription = this.form.publicDescription

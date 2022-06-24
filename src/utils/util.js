@@ -25,6 +25,18 @@ const Util = {
             value
         );
     },
+    generateUUID:()=>{
+        var d = new Date().getTime()
+        if (window.performance && typeof window.performance.now === 'function') {
+            d += performance.now() //use high-precision timer if available
+        }
+        var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = (d + Math.random() * 16) % 16 | 0
+            d = Math.floor(d / 16)
+            return (c == 'x' ? r : (r & 0x3) | 0x8).toString(16)
+        })
+        return uuid
+    },
     getSizeText(size) {
         var data = "";
         if (size < 0.1 * 1024) { //如果小于0.1KB转化成B  
@@ -196,6 +208,104 @@ const install=function(Vue){
     })
 }
   
+export const timeData =[
+    { key: '12:00 AM'},
+    { key: '12:15 AM'},
+    { key: '12:30 AM'},
+    { key: '12:45 AM'},
+    { key: '1:00 AM'},
+    { key: '1:15 AM'},
+    { key: '1:30 AM'},
+    { key: '1:45 AM'},
+    { key: '2:00 AM'},
+    { key: '2:15 AM'},
+    { key: '2:30 AM'},
+    { key: '2:45 AM'},
+    { key: '3:00 AM'},
+    { key: '3:15 AM'},
+    { key: '3:30 AM'},
+    { key: '3:45 AM'},
+    { key: '4:00 AM'},
+    { key: '4:15 AM'},
+    { key: '4:30 AM'},
+    { key: '4:45 AM'},
+    { key: '5:00 AM'},
+    { key: '5:15 AM'},
+    { key: '5:30 AM'},
+    { key: '5:45 AM'},
+    { key: '6:00 AM'},
+    { key: '6:15 AM'},
+    { key: '6:30 AM'},
+    { key: '6:45 AM'},
+    { key: '7:00 AM'},
+    { key: '7:15 AM'},
+    { key: '7:30 AM'},
+    { key: '7:45 AM'},
+    { key: '8:00 AM'},
+    { key: '8:15 AM'},
+    { key: '8:30 AM'},
+    { key: '8:45 AM'},
+    { key: '9:00 AM'},
+    { key: '9:15 AM'},
+    { key: '9:30 AM'},
+    { key: '9:45 AM'},
+    { key: '10:00 AM'},
+    { key: '10:15 AM'},
+    { key: '10:30 AM'},
+    { key: '10:45 AM'},
+    { key: '11:00 AM'},
+    { key: '11:15 AM'},
+    { key: '11:30 AM'},
+    { key: '11:45 AM'},
+    { key: '12:00 PM'},
+    { key: '12:15 PM'},
+    { key: '12:30 PM'},
+    { key: '12:45 PM'},
+    { key: '1:00 PM'},
+    { key: '1:15 PM'},
+    { key: '1:30 PM'},
+    { key: '1:45 PM'},
+    { key: '2:00 PM'},
+    { key: '2:15 PM'},
+    { key: '2:30 PM'},
+    { key: '2:45 PM'},
+    { key: '3:00 PM'},
+    { key: '3:15 PM'},
+    { key: '3:30 PM'},
+    { key: '3:45 PM'},
+    { key: '4:00 PM'},
+    { key: '4:15 PM'},
+    { key: '4:30 PM'},
+    { key: '4:45 PM'},
+    { key: '5:00 PM'},
+    { key: '5:15 PM'},
+    { key: '5:30 PM'},
+    { key: '5:45 PM'},
+    { key: '6:00 PM'},
+    { key: '6:15 PM'},
+    { key: '6:30 PM'},
+    { key: '6:45 PM'},
+    { key: '7:00 PM'},
+    { key: '7:15 PM'},
+    { key: '7:30 PM'},
+    { key: '7:45 PM'},
+    { key: '8:00 PM'},
+    { key: '8:15 PM'},
+    { key: '8:30 PM'},
+    { key: '8:45 PM'},
+    { key: '9:00 PM'},
+    { key: '9:15 PM'},
+    { key: '9:30 PM'},
+    { key: '9:45 PM'},
+    { key: '10:00 PM'},
+    { key: '10:15 PM'},
+    { key: '10:30 PM'},
+    { key: '10:45 PM'},
+    { key: '11:00 PM'},
+    { key: '11:15 PM'},
+    { key: '11:30 PM'},
+    { key: '11:45 PM'},
+    ]
 export default {
     install,
     ...Util
